@@ -1,0 +1,215 @@
+body {
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+    background-image: url(777.jpg);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    opacity: 1.0;
+    box-shadow:20px 10px 10px #444;
+}
+/* -----====---This is where i designed my Tool Tip.--==============-------------*/
+.tooltip {
+    position: fixed;
+    top:90px;
+    left: 40px;
+    display: inline-block;
+}
+.tooltip-text {
+    padding: 6px;
+    background-color:#333;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    top: -45px;
+    left: -12px;
+}
+.tooltip-text::after {
+    content: '''';
+    position:absolute;
+    left: 10px;
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    border-left:7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #333;
+
+}
+tooltip:hover.tooltip-text {
+    visibility: visible;
+}
+/* =================This is for all my captions in my html documents==================*/
+.caption {
+    display:block;
+    font-size:20px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    color: green;
+}
+/* The Header Section Styling*/
+ h1,h2 {
+    color:whitesmoke;
+    text-align:center;
+    text-decoration:none;
+    font-family: fantasy;
+    font-size:50px;
+    margin-top: 75px;
+ }
+/*================== This is for my table css styling.==================*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px auto; 
+}
+th, td {
+    padding: 15px;
+    border: 2px solid black;
+}
+thead th {
+    background-color: red;
+    color: black;
+    text-align: left;
+}
+tbody tr:nth-child(even) {
+background-color: white;
+}
+tbody tr:hover {
+    background-color: #ddd;
+}
+/*================== This is for my nav styling===============*/
+nav ul {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    font-size: 1.5rem;
+    margin-top:30px;
+}
+ul {
+    width:70%;
+    margin-inline: auto;
+}
+li {
+list-style-type: none;
+text-transform:capitalize;
+}
+ a {
+text-decoration:none;
+color: white;
+}
+ 
+#navbar ul li a:hover {
+      color:red;
+      background-color:black;
+}
+/* ============These are stylings for the image=======================*/
+.image {
+    float:left;
+    margin-right:10px;
+    margin-bottom:300px;
+}
+.image-container {
+    display: flex;
+    gap: 10px;
+    margin-top:700px;
+    /* justify-content: center; */
+    /* padding: 25px; */
+    background: black;
+    border-radius: 60px;
+}
+img:hover {
+    border:12px dashed white;
+}
+
+/* This is for my form styling*/
+.form {
+    background-color: black;
+}
+.address {
+    text-align:center;
+    font-weight:bolder;
+    color: green;
+}
+.container {
+    max-width:1200px;
+    margin: 0 auto;
+    padding:0 20px;
+}
+/* This is my button styling*/
+.button {
+    padding: 3em .8em;
+    border: 3px solid #446a88;
+    background: white;
+    border-radius:3em;
+    box-shadow: 0.5em .25em gray;
+    color: orange;
+    text-shadow: 0- .0.5em .0.5em #335166;
+    font-size:95%;
+    line-height: 1.5;
+}
+/* This is my video styling*/
+.video {
+    background-color: grey;
+    border-bottom-left-radius:ridge;
+    
+}
+#about {
+    color: white;
+}
+.border {
+    border-style:groove;
+    border-radius:10px;
+    background-color: black;
+    color: red;
+    margin-top:200px;
+    margin-bottom:200px;
+    padding-left:30px;
+}
+.yellow {
+    color: white;
+    font-size:medium;
+    font-style: italic;
+    margin-top:300px;
+}
+p,dl {
+    text-align: center;
+    color:grey;
+    text-align:justify;
+ }
+ /* Here is the css for my testimonial page */
+ .testimonial  {
+    font-family: sans-serif;
+    margin-left: 105px;
+    padding:0;
+    background-color: black;
+    background-image:none;
+    line-height: 1.6;
+ }
+ 
+ .h-one {
+    color: orange;
+    text-align: center;
+    font-family:fantasy;
+ }
+ footer {
+    color: white;
+    text-align:center;
+    display:flex;
+    gap:1px;
+    justify-content:center;
+    border-radius:10px;
+    border:1px;                                                                                                                                                                                                                                                                                                           
+ }
+ img {
+    max-width: 100%;
+    height: auto;
+ }
+ .image-row {
+    display: flex;
+    gap: 5px;
+ }
